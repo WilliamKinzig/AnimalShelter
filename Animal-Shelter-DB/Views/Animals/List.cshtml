@@ -1,0 +1,11 @@
+<h1>Welcome to the Animal List Page</h1>
+<ul>
+  @foreach(var animal in Model)
+  {
+    <li>@animal.GetAnimalType()</li>
+    <li>@animal.GetAnimalName()</li>
+    <li>@animal.GetAnimalGender()</li>
+    <li>@animal.GetAnimalAge()</li>
+  }
+</ul>
+<a href="/">Home</a>

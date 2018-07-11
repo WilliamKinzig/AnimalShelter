@@ -12,18 +12,12 @@ namespace AnimalShelter.Controllers
       return View();
     }
 
-    [HttpGet("/Animals/Tigers")]
-    public ActionResult Tigers()
+    [HttpGet("/Animals/List")]
+    public ActionResult List()
     {
-      Tiger newTiger1 = new Tiger("Fuzzy", "Male", 12);
-      Tiger newTiger2 = new Tiger("Maude", "Female", 15);
+      List<Animal> allAnimals = Animal.GetAllAnimals();
 
-      newTiger1.SaveTiger();
-      newTiger2.SaveTiger();
-
-      List<Tiger> allTigers = Tiger.GetAllTigers();
-
-      return View(allTigers);
+      return View(allAnimals);
     }
   }
 }
