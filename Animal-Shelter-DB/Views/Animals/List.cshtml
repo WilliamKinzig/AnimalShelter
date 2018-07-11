@@ -1,3 +1,8 @@
+<head>
+    <title>Animal Shelter</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<div class="container">
 <h1>Welcome to the Animal List Page</h1>
 <ul>
   @foreach(var animal in Model)
@@ -5,7 +10,10 @@
     <li>@animal.GetAnimalType()</li>
     <li>@animal.GetAnimalName()</li>
     <li>@animal.GetAnimalGender()</li>
-    <li>@animal.GetAnimalAge()</li>
+    <li>@animal.GetAnimalAge()</li><br>
   }
 </ul>
-<a href="/">Home</a>
+<a href="/">Home</a><br>
+<a href="/Animals/CreateForm">Add an Animal</a><br>
+<a href="/Animals/Deleted">Delete All Animals</a>
+</div>

@@ -1,0 +1,21 @@
+<head>
+    <title>Animal Shelter</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+
+<div class="container">
+<h1>Add An Animal</h1>
+
+<form action="/Animals/List" method="post">
+  <label for="newtype">Type of Animal</label>
+  <input name="newtype" id="newtype" type="text" class="form-control">
+  <label for="newname">Name of Animal</label>
+  <input name="newname" id="newname" type="text" class="form-control">
+  <label for="newgender">Gender of Animal</label>
+  <input name="newgender" id="newgender" type="text" class="form-control">
+  <label for="newage">Age of Animal</label>
+  <input name="newage" id="newage" type="number" class="form-control">
+<button type="submit" class="btn btn-success">Add!</button>
+</form>
+<a href="/Animals">Cancel</a>
+</div>
